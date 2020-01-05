@@ -1,0 +1,40 @@
+body {
+  font-family: 'Playfair Display';
+  background-color: #f8f7f6;
+  /* color: #6d6150; */
+  color: #5e5f5e;
+}
+.Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 4em;
+  border: 2px solid #6d6150;
+}
+
+.Header {
+  font-family: 'Playfair Display';
+  /* font-family: 'Tangerine'; */
+  font-size: 4em;
+  margin-bottom: .5em;
+}
+
+.Subheader {
+  /* font-family: 'Tangerine'; */
+  font-weight: 200;
+  font-size: 2em;
+  margin-bottom: .5em;
+}
+
+.Footer {
+  height: 2em;
+}
