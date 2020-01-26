@@ -1,41 +1,124 @@
 body {
   font-family: 'Playfair Display';
   background-color: #f8f7f6;
-  /* color: #6d6150; */
   color: #5e5f5e;
+  font-size: 1em;
+  line-height: 1.5em;
 }
-.Main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  justify-content: center;
-}
+
+.Main {}
 
 .Content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
+  /* background-color: #F3EAE3; */
   padding: 4em;
-  border: 2px solid #6d6150;
   text-align: center;
 }
 
 .Header {
   font-family: 'Playfair Display';
-  /* font-family: 'Tangerine'; */
-  font-size: 4em;
+  font-size: 3em;
   margin-bottom: .5em;
+  line-height: 1em;
+  text-align: center;
+}
+
+.Header__large {
+  font-size: 3em;
+  font-family: 'Tangerine';
+  margin-bottom: .4em;
+  line-height: 1em;
+}
+
+.Header__medium {
+  font-size: 2em;
+  font-family: 'Tangerine';
+  margin-bottom: .2em;
+  line-height: 1em;
 }
 
 .Subheader {
-  /* font-family: 'Tangerine'; */
   font-weight: 200;
-  font-size: 2em;
+  font-size: 1.5em;
   margin-bottom: .5em;
+  line-height: 1em;
+  text-align: center;
 }
 
 .Footer {
   height: 2em;
+}
+
+.Divider {
+  border-bottom: 2px solid #ededed;
+  margin: 1em 20%;
+}
+
+.Section {
+  padding: 5vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Section:first-child {
+  margin-top: 0;
+}
+
+.Section:last-child {
+  margin-bottom: 0;
+}
+
+.Section:nth-child(odd) {
+  /* background-color: white;
+  border: 1px solid #6d6150;  */
+}
+
+.Ceremony {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.Hotels {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+}
+
+.Tile {
+  padding: 2em;
+  border-radius: 3px;
+  border: 1px solid #ededed;
+  background-color: #fff;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Hotels a:hover, .Hotels a:focus-within {
+  box-shadow: .1em .1em .1em #ededed;
+}
+
+a {
+  text-decoration: none;
+  color: #5e5f5e;
+}
+
+.Recommendations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+}
+
+@media(max-device-width: 667px) {
+  .Hotels {
+    grid-template-columns: 1fr;
+  }
+  .Recommendations {
+    grid-template-columns: 1fr;
+  }
 }
