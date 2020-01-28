@@ -47,13 +47,13 @@ body {
   background-color: white;
   border: 1px solid #ededed;
   border-radius: 3px;
-  height: 0;
   overflow: hidden;
 }
 
 .Navigation__menu:focus-within {
   opacity: 1;
   left: 8px;
+  overflow: visible;
 }
 
 .Content {
