@@ -13,9 +13,11 @@
   <link rel="stylesheet" href="style.css">
   <title>John & Mary Kate</title>
 </head>
+<body onclick="document.querySelector('.Navigation__menu').classList.remove('Open')">
 
   <nav class="Navigation">
-    <button class="Navigation__circle" onclick="document.querySelector('.Navigation__item').focus()">
+    <button class="Navigation__circle"
+      onclick="event.stopPropagation();document.querySelector('.Navigation__menu').classList.add('Open');document.querySelector('.Navigation__item').focus();">
     </button>
     <div class="Navigation__menu" onclick="document.activeElement.blur()">
       <button class="Navigation__item" onclick="document.querySelector('#Details').scrollIntoView({behavior: 'smooth'})">
@@ -24,19 +26,20 @@
       <button class="Navigation__item" onclick="document.querySelector('#Party').scrollIntoView({behavior: 'smooth'})">
         Bridal Party
       </button>
-      <button class="Navigation__item" onclick="document.querySelector('#Accommodations').scrollIntoView({behavior: 'smooth'})">
+      <button class="Navigation__item"
+        onclick="document.querySelector('#Accommodations').scrollIntoView({behavior: 'smooth'})">
         Accomodations
       </button>
       <button class="Navigation__item" onclick="document.querySelector('#Registry').scrollIntoView({behavior: 'smooth'})">
         Registry
       </button>
-      <button class="Navigation__item" onclick="document.querySelector('#Recommendations').scrollIntoView({behavior: 'smooth'})">
+      <button class="Navigation__item"
+        onclick="document.querySelector('#Recommendations').scrollIntoView({behavior: 'smooth'})">
         Recommendations
       </button>
     </div>
   </nav>
 
-<body>
   <main class="Main">
     <section id="Details" class="Section">
       <h1 class="Header">John & Mary Kate</h1>
@@ -154,6 +157,7 @@
       </ul>
     </section>
   </main>
+
 
 </body>
 

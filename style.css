@@ -7,53 +7,50 @@ body {
 }
 
 .Navigation {
-  position: sticky;
+  position: fixed;
   height: 0;
-  top: 0;
+  top: 8px;
+  left: 8px;
 }
 
 .Navigation__circle {
+  display: block;
   height: 40px;
   width: 40px;
   border: 1px solid transparent;
   border-radius: 20px;
   background-color: #5e5f5e;
-  margin: 8px;
   background-image: url("./menu-24px.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .Navigation__item {
-  color:  #5e5f5e;
+  color: #5e5f5e;
   background-color: transparent;
   border: none;
   margin: .5em 0;
 }
 
-.Navigation__item:focus-within,
-.Navigation__item:hover {
+.Navigation__item:focus-within, .Navigation__item:hover {
   background-color: #ededed;
 }
 
 .Navigation__menu {
-  opacity: 0;
-  display: flex;
-  flex-direction: column;
+  display: none;
   position: absolute;
   top: 52px;
-  left: 99999999px;
+  left: 8px;
   text-align: left;
+}
+
+.Navigation__menu.Open {
+  display: flex;
+  flex-direction: column;
+  width: auto;
   background-color: white;
   border: 1px solid #ededed;
   border-radius: 3px;
-  overflow: hidden;
-}
-
-.Navigation__menu:focus-within {
-  opacity: 1;
-  left: 8px;
-  overflow: visible;
 }
 
 .Content {
@@ -98,7 +95,6 @@ body {
 .Footer {
   height: 2em;
 }
-
 
 .Divider {
   border-bottom: 2px solid #ededed;
