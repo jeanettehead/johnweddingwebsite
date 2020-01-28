@@ -15,6 +15,7 @@ body {
 .Navigation__circle {
   height: 40px;
   width: 40px;
+  border: 1px solid transparent;
   border-radius: 20px;
   background-color: #5e5f5e;
   margin: 8px;
@@ -41,7 +42,7 @@ body {
   flex-direction: column;
   position: absolute;
   top: 52px;
-  left: 8px;
+  left: 99999999px;
   text-align: left;
   background-color: white;
   border: 1px solid #ededed;
@@ -52,7 +53,7 @@ body {
 
 .Navigation__menu:focus-within {
   opacity: 1;
-  height: initial;
+  left: 8px;
 }
 
 .Content {
