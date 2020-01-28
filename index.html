@@ -12,71 +12,149 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <title>John & Mary Kate</title>
-  </head>
-  
-  <body>
-    <main class="Main">
-      <section class="Section">
-        <h1 class="Header">John & Mary Kate</h1>
-        <div class="Subheader">July 25, 2020 &middot; Manistee, MI</div>
-      </section>
+</head>
 
-      <div class="Divider"></div>
+  <nav class="Navigation">
+    <button class="Navigation__circle" onclick="document.querySelector('.Navigation__item').focus()">
+    </button>
+    <div class="Navigation__menu" onclick="document.activeElement.blur()">
+      <button class="Navigation__item" onclick="document.querySelector('#Details').scrollIntoView({behavior: 'smooth'})">
+        Details
+      </button>
+      <button class="Navigation__item" onclick="document.querySelector('#Party').scrollIntoView({behavior: 'smooth'})">
+        Bridal Party
+      </button>
+      <button class="Navigation__item" onclick="document.querySelector('#Accommodations').scrollIntoView({behavior: 'smooth'})">
+        Accomodations
+      </button>
+      <button class="Navigation__item" onclick="document.querySelector('#Registry').scrollIntoView({behavior: 'smooth'})">
+        Registry
+      </button>
+      <button class="Navigation__item" onclick="document.querySelector('#Recommendations').scrollIntoView({behavior: 'smooth'})">
+        Recommendations
+      </button>
+    </div>
+  </nav>
 
-      <section class="Section">
-        <h2 class="Header__large">Registry</h2>
-        <div>Details to come</div>
-      </section>
+<body>
+  <main class="Main">
+    <section id="Details" class="Section">
+      <h1 class="Header">John & Mary Kate</h1>
+      <div class="Subheader">July 25, 2020 &middot; Manistee, MI</div>
+    </section>
 
-      <div class="Divider"></div>
-  
-      <section class="Section">
-        <h2 class="Header__large">Logistics</h2>
-        <div class="Ceremony">
-          <h3 class="Header__medium">Ceremony</h3>
+    <section class="Section">
+      <div class="Ceremony">
+        <h2 class="Header__large">Ceremony</h3>
           <div>Guardian Angels Church</div>
           <div>371 5th St, Manistee, Mi 49660</div>
           <div>3:00pm</div>
-        </div>
-  
-        <div class="Ceremony">
-          <h3 class="Header__medium">Reception</h3>
+      </div>
+
+      <div class="Ceremony">
+        <h2 class="Header__large">Reception</h3>
           <div>Manistee Golf and Country Club (Outdoors)</div>
           <div>500 Cherry Rd, Manistee, Mi 49660</div>
+      </div>
+    </section>
+
+    <div class="Divider"></div>
+    <section id="Party" class="Section">
+      <div class="BridalParty">
+      <h2 class="Header__large">Bridal Party</h2>
+        <div class="PartySection">
+          <h3 class="Header__medium">Matron of Honor</h3>
+          <div>Teresa Wood</div>
         </div>
-      </section>
+        <div class="PartySection">
+          <h3 class="Header__medium">Maid of Honor</h3>
+          <div>Erin O’Donnell</div>
+        </div>
+        <div class="PartySection">
+          <h3 class="Header__medium">Bridesmaids</h3>
+          <ul>
+            <li>Allison Tayloe</li>
+            <li>Brooke Ruffolo</li>
+            <li>Rachel Hodge</li>
+            <li>Meghan Cotant</li>
+            <li>Mo Vincent</li>
+            <li>Melissa Vincent</li>
+            <li>Amanda Vincent</li>
+            <li>Jeanette Head</li>
+          </ul>
+        </div>
+        <div class="PartySection">
+          <h3 class="Header__medium">Best Man</h3>
+          <div>Michael Vallentine</div>
+        </div>
+        <div class="PartySection">
+          <h3 class="Header__medium">Groomsmen</h3>
+          <ul>
+            <li>Chris Helgerson</li>
+            <li>Kyle Downey</li>
+            <li>Ryan Saunders</li>
+            <li>Brandon Laetz</li>
+            <li>Mike Bridge</li>
+            <li>Brian Vincent</li>
+            <li>Kevin Vincent</li>
+            <li>Joe Vincent</li>
+            <li>Al Scott</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-      <div class="Divider"></div>
-  
-      <section class="Section">
-        <h2 class="Header__large">Guest Accommodations</h2>
-        <ul class="Hotels">
-          <li><a class="Tile" target="blank" href="https://www.lrcr.com/">Little River Casino</a></li>
-          <li><a class="Tile" target="blank" href="https://www.wyndhamhotels.com/super-8/manistee-michigan/super-8-manistee/overview">Super 8</a></li>
-          <li><a class="Tile" target="blank" href="https://www.wyndhamhotels.com/microtel/manistee-michigan/microtel-inn-and-suites-manistee/overview">Microtel</a>
-          </li>
-          <li><a class="Tile" target="blank" href="https://www.manisteenational.com/">Manistee National</a></li>
-          <li><a class="Tile" target="blank" href="https://www.airbnb.com/">Airbnb</a></li>
-          <li><a class="Tile" target="blank" href="https://www.unsaltedvacations.com/">Unsalted vacations</a></li>
-        </ul>
-      </section>
+    <div class="Divider"></div>
 
-      <div class="Divider"></div>
-  
-      <section class="Section">
-        <h2 class="Header__large">Bride & Groom Recommend</h2>
-        <ul class="Recommendations">
-          <li class="Tile">Coffee: Outpost</li>
-          <li class="Tile">Breakfast: Goodies</li>
-          <li class="Tile">Lunch: 31 Flavors</li>
-          <li class="Tile">Dinner: Blue Fish</li>
-          <li class="Tile"><div>Beach: 1st st & 5th st.</div>  <div>Great spot for a picnic!</div></li>
-          <li class="Tile">Adventure: Charter fishing</li>
-          <li class="Tile">Stroll: Walk the boardwalk to downtown</li>
-          <li class="Tile">Explore: Hiking at Magoon Creek</li>
-        </ul>
-      </section>
-    </main>
-  </body>
-  
-  </html>
+    <section id="Accommodations" class="Section">
+      <h2 class="Header__large">Guest Accommodations</h2>
+      <ul class="Hotels">
+        <li><a class="Tile" target="blank" href="https://www.lrcr.com/">Little River Casino</a></li>
+        <li><a class="Tile" target="blank"
+            href="https://www.wyndhamhotels.com/super-8/manistee-michigan/super-8-manistee/overview">Super 8</a></li>
+        <li><a class="Tile" target="blank"
+            href="https://www.wyndhamhotels.com/microtel/manistee-michigan/microtel-inn-and-suites-manistee/overview">Microtel</a>
+        </li>
+        <li><a class="Tile" target="blank" href="https://www.manisteenational.com/">Manistee National</a></li>
+        <li><a class="Tile" target="blank" href="https://www.airbnb.com/">Airbnb</a></li>
+        <li><a class="Tile" target="blank" href="https://www.unsaltedvacations.com/">Unsalted Vacations</a></li>
+        <li><a class="Tile" target="blank" href="https://www.vrbo.com/">Vrbo</a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="Divider"></div>
+
+    <section id="Registry" class="Section">
+      <h2 class="Header__large">Registry</h2>
+      <div>Details to come</div>
+    </section>
+
+    <div class="Divider"></div>
+
+    <section id="Recommendations" class="Section">
+      <h2 class="Header__large">Bride & Groom Recommend</h2>
+      <ul class="Recommendations">
+        <li class="Tile">Coffee: Outpost</li>
+        <li class="Tile">Breakfast: Goodies</li>
+        <li class="Tile">Lunch: House of Flavors</li>
+        <li class="Tile">Dinner: Blue Fish</li>
+        <li class="Tile">Cocktail: TJ's Pub</li>
+        <li class="Tile">
+          <div>Beach: 1st st & 5th st.</div>
+          <div>Great spot for a picnic!</div>
+        </li>
+        <li class="Tile">Adventure: Charter fishing</li>
+        <li class="Tile">Stroll: Walk the boardwalk to downtown</li>
+        <li class="Tile">Explore: Hiking atBlue Fish Magoon Creek</li>
+        <li class="Tile">Golf: Manistee National</li>
+        <li class="Tile">Golf: Manistee Golf and Country Club</li>
+        <li class="Tile">Golf: The Heathlands</li>
+        <li class="Tile">Golf: Arcadia Bluffs</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+
+</html>

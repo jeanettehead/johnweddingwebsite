@@ -6,6 +6,55 @@ body {
   line-height: 1.5em;
 }
 
+.Navigation {
+  position: sticky;
+  height: 0;
+  top: 0;
+}
+
+.Navigation__circle {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: #5e5f5e;
+  margin: 8px;
+  background-image: url("./menu-24px.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Navigation__item {
+  color:  #5e5f5e;
+  background-color: transparent;
+  border: none;
+  margin: .5em 0;
+}
+
+.Navigation__item:focus-within,
+.Navigation__item:hover {
+  background-color: #ededed;
+}
+
+.Navigation__menu {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 52px;
+  left: 8px;
+  text-align: left;
+  background-color: white;
+  border: 1px solid #ededed;
+  border-radius: 3px;
+  height: 0;
+  overflow: hidden;
+}
+
+.Navigation__menu:focus-within {
+  opacity: 1;
+  height: fit-content;
+}
+
 .Main {}
 
 .Content {
@@ -51,29 +100,21 @@ body {
   height: 2em;
 }
 
+
 .Divider {
   border-bottom: 2px solid #ededed;
   margin: 1em 20%;
 }
 
 .Section {
-  padding: 5vh 0;
+  margin: 5vh 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.Section:first-child {
-  margin-top: 0;
-}
-
-.Section:last-child {
-  margin-bottom: 0;
-}
-
-.Section:nth-child(odd) {
-  /* background-color: white;
-  border: 1px solid #6d6150;  */
+.PartySection {
+  margin: 1em 0;
 }
 
 .Ceremony {
@@ -114,11 +155,20 @@ a {
   grid-gap: 2em;
 }
 
-@media(max-device-width: 667px) {
+@media(max-width: 667px) {
   .Hotels {
     grid-template-columns: 1fr;
   }
   .Recommendations {
     grid-template-columns: 1fr;
   }
+}
+
+.Scrim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
 }
