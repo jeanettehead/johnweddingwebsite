@@ -8,7 +8,6 @@ body {
 
 .Navigation {
   position: fixed;
-  height: 0;
   top: 8px;
   left: 8px;
 }
@@ -101,11 +100,22 @@ body {
   margin: 1em 20%;
 }
 
+.Main {
+  margin: 0 auto;
+  width: 75%;
+}
+
 .Section {
   margin: 5vh 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.Details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3em;
 }
 
 .PartySection {
@@ -122,6 +132,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2em;
+  width: 100%;
+  padding: 2em;
 }
 
 .Tile {
@@ -152,6 +164,12 @@ a {
 }
 
 @media(max-width: 667px) {
+  .Main {
+    width: 100%;
+  }
+  .Details {
+    grid-template-columns: auto;
+  }
   .Hotels {
     grid-template-columns: 1fr;
   }
