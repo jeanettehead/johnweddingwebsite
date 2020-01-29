@@ -6,6 +6,10 @@ body {
   line-height: 1.5em;
 }
 
+body * {
+  box-sizing: border-box;
+}
+
 .Navigation {
   position: fixed;
   top: 8px;
@@ -22,6 +26,17 @@ body {
   background-image: url("./menu-24px.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.ManisteeImage {
+  background-image: url("./manistee.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-clip: padding-box;
+  width: 80%;
+  height: 25em;
+  opacity: .9;
+  margin: 0 auto;
 }
 
 .Navigation__item {
@@ -137,18 +152,20 @@ body {
 }
 
 .Tile {
-  padding: 2em;
   border-radius: 3px;
   border: 1px solid #ededed;
   background-color: #fff;
-  min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  min-height: 7em;
+  padding: 0 1em;
+  text-align: center;
 }
 
 .Hotels a:hover, .Hotels a:focus-within {
+  background-color: #fdfdfd;
   box-shadow: .1em .1em .1em #ededed;
 }
 

@@ -13,13 +13,16 @@
   <link rel="stylesheet" href="style.css">
   <title>John & Mary Kate</title>
 </head>
-<body onclick="document.querySelector('.Navigation__menu').classList.remove('Open')">
+<body id="Top" onclick="document.querySelector('.Navigation__menu').classList.remove('Open')">
 
   <nav class="Navigation">
     <button class="Navigation__circle"
       onclick="event.stopPropagation();document.querySelector('.Navigation__menu').classList.add('Open');document.querySelector('.Navigation__item').focus();">
     </button>
     <div class="Navigation__menu" onclick="document.activeElement.blur()">
+      <button class="Navigation__item" onclick="document.querySelector('#Top').scrollIntoView({behavior: 'smooth'})">
+        Top
+      </button>
       <button class="Navigation__item" onclick="document.querySelector('#Details').scrollIntoView({behavior: 'smooth'})">
         Details
       </button>
@@ -41,11 +44,14 @@
   </nav>
 
   <main class="Main">
-    <section id="Details" class="Section">
+    <section class="Section">
       <h1 class="Header">John & Mary Kate</h1>
       <div class="Subheader">July 25, 2020 &middot; Manistee, MI</div>
     </section>
 
+    <div class="ManisteeImage"></div>
+
+    <div id="Details" class="Divider"></div>
     <section class="Section">
       <div class="Details">
         <div class="Ceremony">
@@ -62,6 +68,7 @@
         </div>
       </div>
     </section>
+
 
     <div id="Party" class="Divider"></div>
     <section class="Section">
@@ -113,7 +120,7 @@
 
     <section class="Section">
       <h2 class="Header__large">Guest Accommodations</h2>
-      <div>A block of rooms have been set aside for the Head/Vincent wedding at:</div>
+      <div>A block of rooms have been set aside for the wedding at:</div>
       <ul class="Hotels">
         <li><a class="Tile" target="blank" href="https://www.lrcr.com/">Little River Casino</a></li>
         <li><a class="Tile" target="blank"
