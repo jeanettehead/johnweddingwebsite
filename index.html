@@ -38,7 +38,7 @@
       </button>
       <button class="Navigation__item"
         onclick="document.querySelector('#Recommendations').scrollIntoView({behavior: 'smooth'})">
-        Recommendations
+        Things to Do in Manistee
       </button>
     </div>
   </nav>
@@ -126,21 +126,21 @@
       <h2 class="Header__large">Guest Accommodations</h2>
       <div>A block of rooms have been set aside for the wedding at:</div>
       <ul class="Hotels">
-        <li><a class="Tile" target="blank" href="https://www.lrcr.com/">Little River Casino</a></li>
-        <li><a class="Tile" target="blank"
+        <li><a class="Tile HotelTile" target="blank" href="https://www.lrcr.com/">Little River Casino</a></li>
+        <li><a class="Tile HotelTile" target="blank"
             href="https://www.wyndhamhotels.com/microtel/manistee-michigan/microtel-inn-and-suites-manistee/overview">Microtel</a>
         </li>
-        <li><a class="Tile" target="blank"
+        <li><a class="Tile HotelTile" target="blank"
             href="https://www.wyndhamhotels.com/super-8/manistee-michigan/super-8-manistee/overview">Super 8</a></li>
       </ul>
       <div>Other convenient places you can look for a reservation:</div>
       <ul class="Hotels">
-        <li><a class="Tile" target="blank" href="https://www.wyndhamhotels.com/days-inn/manistee-michigan/days-inn-manistee/overview">Days Inn</a> </li>
-        <li><a class="Tile" target="blank" href="https://www.manisteenational.com/">Manistee National</a></li>
-        <li><a class="Tile" target="blank" href="https://www.airbnb.com/">Airbnb</a></li>
-        <li><a class="Tile" target="blank" href="https://www.c21boardwalkrentals.com/">Century 21 Boardwalk Rentals</a> </li>
-        <li><a class="Tile" target="blank" href="https://www.unsaltedvacations.com/">Unsalted Vacations</a></li>
-        <li><a class="Tile" target="blank" href="https://www.vrbo.com/">Vrbo</a></li>
+        <li><a class="Tile HotelTile" target="blank" href="https://www.wyndhamhotels.com/days-inn/manistee-michigan/days-inn-manistee/overview">Days Inn</a> </li>
+        <li><a class="Tile HotelTile" target="blank" href="https://www.manisteenational.com/">Manistee National</a></li>
+        <li><a class="Tile HotelTile" target="blank" href="https://www.airbnb.com/">Airbnb</a></li>
+        <li><a class="Tile HotelTile" target="blank" href="https://www.c21boardwalkrentals.com/">Century 21 Boardwalk Rentals</a> </li>
+        <li><a class="Tile HotelTile" target="blank" href="https://www.unsaltedvacations.com/">Unsalted Vacations</a></li>
+        <li><a class="Tile HotelTile" target="blank" href="https://www.vrbo.com/">Vrbo</a></li>
       </ul>
     </section>
 
@@ -154,24 +154,70 @@
     <div id="Recommendations" class="Divider"></div>
 
     <section class="Section">
-      <h2 class="Header__large">Bride & Groom Recommend</h2>
+      <h2 class="Header__large">Things to Do in Manistee</h2>
+      <div>Recommended by the bride and groom</div>
+      <div class="RecommendationsHeader Header__medium">Dining</div>
       <ul class="Recommendations">
-        <li class="Tile">Coffee: Outpost</li>
-        <li class="Tile">Breakfast: Goodies</li>
-        <li class="Tile">Lunch: House of Flavors</li>
-        <li class="Tile">Dinner: Blue Fish</li>
-        <li class="Tile">Cocktail: TJ's Pub</li>
         <li class="Tile">
-          <div>Beach: 1st st & 5th st</div>
-          <div>Great spot for a picnic!</div>
+          <div class="TileHeader">Coffee</div>
+          <div class="TileContent">Outpost</div>
         </li>
-        <li class="Tile">Adventure: Charter fishing</li>
-        <li class="Tile">Stroll: Walk the boardwalk to downtown</li>
-        <li class="Tile">Explore: Hiking at Blue Fish Magoon Creek</li>
-        <li class="Tile">Golf: Manistee National</li>
-        <li class="Tile">Golf: Manistee Golf and Country Club</li>
-        <li class="Tile">Golf: The Heathlands</li>
-        <li class="Tile">Golf: Arcadia Bluffs</li>
+        <li class="Tile">
+          <div class="TileHeader">Breakfast</div>
+          <div class="TileContent">Goodies</div>
+        </li>
+        <li class="Tile">
+          <div class="TileHeader">Lunch</div>
+          <div class="TileContent">House of Flavors</div>
+        </li>
+        <li class="Tile">
+          <div class="TileHeader">Dinner</div>
+          <div class="TileContent">Blue Fish</div>
+        </li>
+        <li class="Tile">
+          <div class="TileHeader">Cocktail</div>
+          <div class="TileContent">TJ's Pub</div>
+        </li>
+      </ul>
+      <div class="RecommendationsHeader Header__medium">Adventuring</div>
+      <ul class="Recommendations">
+        <li class="Tile">
+          <div class="TileHeader">
+            Beach
+          </div>
+          <div class="TileContent">
+            <div>1st St & 5th St</div>
+            <div>Great spot for a picnic</div>
+          </div>
+        </li>
+        <li class="Tile">
+          <div class="TileHeader">Fishing</div>
+          <div class="TileContent">Charter fishing</div>
+        </li>
+        <li class="Tile">
+          <div class="TileHeader">Hike</div>
+          <div class="TileContent">Walk the boardwalk to downtown</div>
+        </li>
+        <li class="Tile">
+          <div class="TileHeader">Hike</div>
+          <div class="TileContent">Hiking at Blue Fish Magoon Creek</div>
+        </li>
+        <li class="Tile">
+          <div class="TileHeader">Golf</div>
+          <div class="TileContent">Manistee National</div>
+        </li>
+        <li class="Tile">
+          <div class="TileHeader">John Likes Golf</div>
+          <div class="TileContent">Manistee Golf and Country Club</div>
+        </li>
+        <li class="Tile">
+          <div class="TileHeader">So Here's Another Golf Course</div>
+          <div class="TileContent">The Heathlands</div>
+        </li>
+        <li class="Tile">
+          <div class="TileHeader">Golf Golf Golf</div>
+          <div class="TileContent">Arcadia Bluffs</div>
+        </li>
       </ul>
     </section>
   </main>

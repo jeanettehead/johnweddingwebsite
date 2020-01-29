@@ -69,7 +69,7 @@ a:hover {
 .Navigation__menu.Open {
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 15em;
   background-color: white;
   border: 1px solid #ededed;
   border-radius: 3px;
@@ -159,17 +159,37 @@ a:hover {
   padding: 2em;
 }
 
-.Tile {
-  border-radius: 3px;
-  border: 1px solid #ededed;
-  background-color: #fff;
+.HotelTile {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 7em;
   padding: 0 1em;
+}
+
+.Tile {
+  border-radius: 3px;
+  border: 1px solid #ededed;
+  background-color: #fff;
+  min-height: 7em;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.TileHeader {
+  width: 100%;
+  background-color: #f3eae2;
+  text-align: left;
+  padding: 2px 1em;
+}
+
+.TileContent {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .Hotels a:hover, .Hotels a:focus-within {
@@ -183,9 +203,15 @@ a:hover {
 }
 
 .Recommendations {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2em;
+  padding: 2em;
+}
+
+.RecommendationsHeader {
+  margin-top: 1em;
 }
 
 @media(max-width: 667px) {
