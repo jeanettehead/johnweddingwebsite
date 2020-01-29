@@ -31,7 +31,7 @@ body * {
 .ManisteeImage {
   background-image: url("./manistee.jpg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   background-clip: padding-box;
   width: 80%;
   height: 25em;
