@@ -10,6 +10,14 @@ body * {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .Navigation {
   position: fixed;
   top: 8px;
@@ -169,7 +177,7 @@ body * {
   box-shadow: .1em .1em .1em #ededed;
 }
 
-a {
+.Hotels a {
   text-decoration: none;
   color: #5e5f5e;
 }
