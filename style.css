@@ -43,7 +43,6 @@ a:hover {
   background-clip: padding-box;
   width: 80%;
   height: 25em;
-  opacity: .9;
   margin: 0 auto;
 }
 
@@ -64,6 +63,7 @@ a:hover {
   top: 52px;
   left: 8px;
   text-align: left;
+  z-index: 10;
 }
 
 .Navigation__menu.Open {
