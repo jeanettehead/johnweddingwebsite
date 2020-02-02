@@ -192,7 +192,7 @@ a:hover {
 .Recommendations {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 2em;
   padding: 2em 0;
 }
@@ -258,7 +258,8 @@ a:hover {
     grid-template-columns: 1fr 1fr;
   }
   .Recommendations {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
   }
   .Navigation {
     position: fixed;
