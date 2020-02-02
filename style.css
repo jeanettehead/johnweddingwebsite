@@ -154,7 +154,7 @@ a:hover {
   border-radius: 3px;
   border: 1px solid #ededed;
   background-color: #fff;
-  min-height: 7em;
+  min-height: 5em;
   text-align: center;
   display: flex;
   flex-direction: column;
