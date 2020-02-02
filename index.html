@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="style.css">
   <title>John & Mary Kate</title>
 </head>
+
 <body id="Top" onclick="document.querySelector('.Navigation__menu').classList.remove('Open')">
 
   <nav class="Navigation">
@@ -23,7 +24,8 @@
       <button class="Navigation__item" onclick="document.querySelector('#Top').scrollIntoView({behavior: 'smooth'})">
         Top
       </button>
-      <button class="Navigation__item" onclick="document.querySelector('#Details').scrollIntoView({behavior: 'smooth'})">
+      <button class="Navigation__item"
+        onclick="document.querySelector('#Details').scrollIntoView({behavior: 'smooth'})">
         Details
       </button>
       <button class="Navigation__item" onclick="document.querySelector('#Party').scrollIntoView({behavior: 'smooth'})">
@@ -33,12 +35,17 @@
         onclick="document.querySelector('#Accommodations').scrollIntoView({behavior: 'smooth'})">
         Accomodations
       </button>
-      <button class="Navigation__item" onclick="document.querySelector('#Registry').scrollIntoView({behavior: 'smooth'})">
+      <button class="Navigation__item"
+        onclick="document.querySelector('#Registry').scrollIntoView({behavior: 'smooth'})">
         Registry
       </button>
       <button class="Navigation__item"
         onclick="document.querySelector('#Recommendations').scrollIntoView({behavior: 'smooth'})">
         Things to Do in Manistee
+      </button>
+      <button class="Navigation__item"
+        onclick="document.querySelector('#House').scrollIntoView({behavior: 'smooth'})">
+        The Historic Vincent House
       </button>
     </div>
   </nav>
@@ -49,7 +56,7 @@
       <div class="Subheader">July 25, 2020 &middot; Manistee, MI</div>
     </section>
 
-    <div class="ManisteeImage"></div>
+    <div class="ColoradoImage"></div>
 
     <div id="Details" class="Divider"></div>
     <section class="Section">
@@ -59,11 +66,11 @@
             <div>Guardian Angels Church</div>
             <div>371 5th St, Manistee, MI 49660</div>
             <div>
-            3:00pm &middot;
-            <a target="blank" href="https://goo.gl/maps/nh9kYrXQ6pk9nuGMA">Map</a>
-</div>
+              3:00pm &middot;
+              <a target="blank" href="https://goo.gl/maps/nh9kYrXQ6pk9nuGMA">Map</a>
+            </div>
         </div>
-    
+
         <div class="Ceremony">
           <h2 class="Header__large">Reception</h3>
             <div>Manistee Golf and Country Club (Outdoors)</div>
@@ -76,8 +83,11 @@
 
     <div id="Party" class="Divider"></div>
     <section class="Section">
-      <div class="BridalParty">
       <h2 class="Header__large">Bridal Party</h2>
+      <div class="Party__grid">
+        <div class="RingImage RingImage__right"></div>
+        <div>
+
         <div class="PartySection">
           <h3 class="Header__medium">Matron of Honor</h3>
           <div>Teresa Wood</div>
@@ -117,6 +127,8 @@
             <li>Al Scott</li>
           </ul>
         </div>
+        </div>
+        <div class="RingImage"></div>
       </div>
     </section>
 
@@ -135,11 +147,15 @@
       </ul>
       <div>Other convenient places you can look for a reservation:</div>
       <ul class="Hotels">
-        <li><a class="Tile HotelTile" target="blank" href="https://www.wyndhamhotels.com/days-inn/manistee-michigan/days-inn-manistee/overview">Days Inn</a> </li>
+        <li><a class="Tile HotelTile" target="blank"
+            href="https://www.wyndhamhotels.com/days-inn/manistee-michigan/days-inn-manistee/overview">Days Inn</a>
+        </li>
         <li><a class="Tile HotelTile" target="blank" href="https://www.manisteenational.com/">Manistee National</a></li>
         <li><a class="Tile HotelTile" target="blank" href="https://www.airbnb.com/">Airbnb</a></li>
-        <li><a class="Tile HotelTile" target="blank" href="https://www.c21boardwalkrentals.com/">Century 21 Boardwalk Rentals</a> </li>
-        <li><a class="Tile HotelTile" target="blank" href="https://www.unsaltedvacations.com/">Unsalted Vacations</a></li>
+        <li><a class="Tile HotelTile" target="blank" href="https://www.c21boardwalkrentals.com/">Century 21 Boardwalk
+            Rentals</a> </li>
+        <li><a class="Tile HotelTile" target="blank" href="https://www.unsaltedvacations.com/">Unsalted Vacations</a>
+        </li>
         <li><a class="Tile HotelTile" target="blank" href="https://www.vrbo.com/">Vrbo</a></li>
       </ul>
     </section>
@@ -152,31 +168,41 @@
     </section>
 
     <div id="Recommendations" class="Divider"></div>
-
     <section class="Section">
       <h2 class="Header__large">Things to Do in Manistee</h2>
+      <div class="ManisteeImage"></div>
       <div>Recommended by the bride and groom</div>
       <div class="RecommendationsHeader Header__medium">Dining</div>
       <ul class="Recommendations">
         <li class="Tile">
           <div class="TileHeader">Coffee</div>
-          <div class="TileContent">Outpost</div>
+          <a class="TileContent" href="http://outpostmanistee.com/">
+            Outpost
+          </a>
         </li>
         <li class="Tile">
           <div class="TileHeader">Breakfast</div>
-          <div class="TileContent">Goodies</div>
+          <a class="TileContent" href="https://www.tripadvisor.com/Restaurant_Review-g42429-d1154515-Reviews-Goody_s_Juice_Java-Manistee_Manistee_County_Michigan.html">
+            Goody's Juice & Java
+          </a>
         </li>
         <li class="Tile">
           <div class="TileHeader">Lunch</div>
-          <div class="TileContent">House of Flavors</div>
+          <a class="TileContent" href="http://www.houseofflavors.com/">
+            House of Flavors
+          </a>
         </li>
         <li class="Tile">
           <div class="TileHeader">Dinner</div>
-          <div class="TileContent">Blue Fish</div>
+          <a class="TileContent" href="https://www.bluefishkitchenbar.com/">
+            Blue Fish Kitchen & Bar
+          </a>
         </li>
         <li class="Tile">
           <div class="TileHeader">Cocktail</div>
-          <div class="TileContent">TJ's Pub</div>
+          <a class="TileContent" href="https://www.ramsdellinn.net/tjs-pub">
+            TJ's Pub
+          </a>
         </li>
       </ul>
       <div class="RecommendationsHeader Header__medium">Adventuring</div>
@@ -185,51 +211,73 @@
           <div class="TileHeader">
             Beach / Picnic
           </div>
-          <div class="TileContent">
-            <div>1st Street Beach</div>
+            <a class="TileContent" href="https://www.visitmanisteecounty.com/web-2-0-directory/1st-street-douglas-park/">First Street
+                Beach</a>
           </div>
         </li>
         <li class="Tile">
           <div class="TileHeader">
             Beach / Picnic
           </div>
-          <div class="TileContent">
-            <div>5th Avenue Beach</div>
-          </div>
+            <a class="TileContent" href="https://www.visitmanisteecounty.com/web-2-0-directory/5th-avenue-beach/">5th Avenue Beach</a>
         </li>
         <li class="Tile">
           <div class="TileHeader">Fishing</div>
-          <div class="TileContent">Charter fishing</div>
+            <a class="TileContent" href="https://fishingbooker.com/destinations/location/us/MI/manistee">Charter fishing</a>
         </li>
         <li class="Tile">
           <div class="TileHeader">Hike</div>
-          <div class="TileContent">Walk the boardwalk to downtown</div>
+            <a class="TileContent"
+              href="https://manisteeriverwalk.com/stories/downtown_manistee_business_directory_locator_map_mi_west_michigan_maps">
+              Walk the Manistee Riverwalk to downtown
+            </a>
         </li>
         <li class="Tile">
-          <div class="TileHeader">Mary Kate Likes to Hike</div>
-          <div class="TileContent">Hike at Blue Fish Magoon Creek</div>
+          <div class="TileHeader">Hike</div>
+            <a class="TileContent" href="https://www.visitmanisteecounty.com/project/magoon-creek">
+              Hike at Magoon Creek Nature Area
+            </a>
         </li>
         <li class="Tile">
           <div class="TileHeader">Golf</div>
-          <div class="TileContent">Manistee National</div>
+          <a class="TileContent" href="https://www.manisteenational.com/golf-course">
+            Manistee National
+          </a>
         </li>
         <li class="Tile">
-          <div class="TileHeader">John Likes to Golf</div>
-          <div class="TileContent">Manistee Golf and Country Club</div>
+          <div class="TileHeader">Golf</div>
+          <a class="TileContent" href="http://www.manisteegolfandcc.com/">
+            Manistee Golf and Country Club
+          </a>
         </li>
         <li class="Tile">
-          <div class="TileHeader">So Here's Another Golf Course</div>
-          <div class="TileContent">The Heathlands</div>
+          <div class="TileHeader">Golf</div>
+          <a class="TileContent" href="http://www.heathlands.com/course.htm">
+            The Heathlands
+          </a>
         </li>
         <li class="Tile">
-          <div class="TileHeader">Golf Golf Golf</div>
-          <div class="TileContent">Arcadia Bluffs</div>
+          <div class="TileHeader">Golf</div>
+          <a class="TileContent" href="https://arcadiabluffs.com/">
+            Arcadia Bluffs
+          </a>
         </li>
       </ul>
     </section>
+
+    <div id="House" class="Divider"></div>
+
+    <section class="Section">
+      <h2 class="Header__large">The Vincent House</h2>
+      <div class="HouseImage"></div>
+      <div>
+        William Vincent was a graduate of Civil Engineer of Chester College in England who arrived in Manistee in the spring of 1871. He later found employment in the area working as a lumber broker, real estate investor and surveyor.
+        At the time, he wanted to construct a home that would withstand the test of time, and therefore he constructed a home that was built of brick and stone. The home contains a parlor, sitting and dining rooms, a china closet, and six chamber rooms.
+        Vincent built this Queen Anne style home in 1885. Today, the house remains in the Vincent family. The barn, located east of the house has been rehabilitated and converted into a fine residence.</div>
+      </div>
+    </section>
+
   </main>
-
-
 </body>
 
 </html>

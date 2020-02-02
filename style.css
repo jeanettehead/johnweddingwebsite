@@ -36,16 +36,6 @@ a:hover {
   background-position: center;
 }
 
-.ManisteeImage {
-  background-image: url("./manistee.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-clip: padding-box;
-  width: 80%;
-  height: 25em;
-  margin: 0 auto;
-}
-
 .Navigation__item {
   color: #5e5f5e;
   background-color: transparent;
@@ -141,6 +131,12 @@ a:hover {
   grid-gap: 3em;
 }
 
+.Party__grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  width: 100%;
+}
+
 .PartySection {
   margin: 1em 0;
   text-align: center;
@@ -192,14 +188,18 @@ a:hover {
   flex-direction: column;
 }
 
-.Hotels a:hover, .Hotels a:focus-within {
+.Tile:hover, .Tile:focus-within {
   background-color: #fdfdfd;
   box-shadow: .1em .1em .1em #ededed;
 }
 
-.Hotels a {
+.Tile, .Tile a {
   text-decoration: none;
   color: #5e5f5e;
+}
+
+.Tile a:hover {
+  text-decoration: underline;
 }
 
 .Recommendations {
@@ -214,17 +214,63 @@ a:hover {
   margin-top: 1em;
 }
 
+.ManisteeImage {
+  background-image: url("./manistee.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: padding-box;
+  width: 100%;
+  height: 20em;
+  margin: 1em auto;
+  background-size: cover;
+}
+
+.HouseImage {
+  background-image: url("./vincenthouse.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: padding-box;
+  width: 100%;
+  height: 45em;
+  margin: 0 auto;
+}
+
+.ColoradoImage {
+  background-image: url("./jmk.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-clip: padding-box;
+  width: 100%;
+  height: 42em;
+  margin: 0 auto;
+}
+
+.RingImage {
+  background-image: url("./ring.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-clip: padding-box;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+.RingImage__right {
+  background-position: left;
+}
+
 @media(max-width: 667px) {
   .Main {
-    width: 100%;
+    width: 95%;
   }
   .Details {
     grid-template-columns: auto;
   }
   .Hotels {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .Recommendations {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
