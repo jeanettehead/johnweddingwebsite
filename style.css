@@ -18,22 +18,27 @@ a:hover {
   text-decoration: underline;
 }
 
-.Navigation {
-  position: fixed;
-  top: 8px;
-  left: 8px;
+.Navigation__circle {
+  display: none;
 }
 
-.Navigation__circle {
-  display: block;
-  height: 40px;
-  width: 40px;
-  border: 1px solid transparent;
-  border-radius: 20px;
-  background-color: #5e5f5e;
-  background-image: url("./menu-24px.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.Navigation__item:first-child {
+  display: none;
+}
+
+.Navigation {
+  background-color: #fff;
+  border-bottom: 1px solid #ededed;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.Navigation__menu {
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+  margin: 0 1em;
 }
 
 .Navigation__item {
@@ -45,24 +50,6 @@ a:hover {
 
 .Navigation__item:focus-within, .Navigation__item:hover {
   background-color: #ededed;
-}
-
-.Navigation__menu {
-  display: none;
-  position: absolute;
-  top: 52px;
-  left: 8px;
-  text-align: left;
-  z-index: 10;
-}
-
-.Navigation__menu.Open {
-  display: flex;
-  flex-direction: column;
-  width: 15em;
-  background-color: white;
-  border: 1px solid #ededed;
-  border-radius: 3px;
 }
 
 .Content {
@@ -114,7 +101,7 @@ a:hover {
 }
 
 .Main {
-  margin: 0 auto;
+  margin: 3em auto;
   width: 75%;
 }
 
@@ -152,7 +139,7 @@ a:hover {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2em;
   width: 100%;
-  padding: 2em;
+  padding: 2em 0;
 }
 
 .HotelTile {
@@ -207,7 +194,7 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2em;
-  padding: 2em;
+  padding: 2em 0;
 }
 
 .RecommendationsHeader {
@@ -272,5 +259,42 @@ a:hover {
   }
   .Recommendations {
     grid-template-columns: 1fr 1fr;
+  }
+  .Navigation {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    background-color: transparent;
+    border-bottom: none;
+  }
+  .Navigation__circle {
+    display: block;
+    height: 40px;
+    width: 40px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: #5e5f5e;
+    background-image: url("./menu-24px.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .Navigation__menu {
+    display: none;
+    position: absolute;
+    top: 52px;
+    left: 8px;
+    text-align: left;
+    z-index: 10;
+  }
+  .Navigation__menu.Open {
+    display: flex;
+    flex-direction: column;
+    width: 15em;
+    background-color: white;
+    border: 1px solid #ededed;
+    border-radius: 3px;
+  }
+  .Navigation__item:first-child {
+    display: block;
   }
 }
